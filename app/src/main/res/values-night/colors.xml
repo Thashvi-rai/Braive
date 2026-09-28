@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Braive palette — dark. Same hues per mode, shifted lighter
+         so they still sit comfortably on a dark surface; on-colors flip
+         to keep contrast on the correct side. -->
+
+    <!-- Neutrals -->
+    <color name="brand_background">#17151C</color>
+    <color name="brand_surface">#201C26</color>
+    <color name="brand_surface_variant">#2B2733</color>
+    <color name="brand_ink">#EDE9F2</color>
+    <color name="brand_ink_soft">#C3BCCC</color>
+    <color name="brand_outline">#6E6678</color>
+    <color name="brand_outline_variant">#3A3542</color>
+
+    <!-- Learning mode - amber -->
+    <color name="mode_learning">#F3A05C</color>
+    <color name="mode_learning_on">#241C12</color>
+    <color name="mode_learning_container">#5C3311</color>
+    <color name="mode_learning_on_container">#FBD9AE</color>
+
+    <!-- Practice mode - teal -->
+    <color name="mode_practice">#4FC9A8</color>
+    <color name="mode_practice_on">#08211B</color>
+    <color name="mode_practice_container">#0F4A3C</color>
+    <color name="mode_practice_on_container">#BFF0DE</color>
+
+    <!-- Test mode - indigo -->
+    <color name="mode_test">#9C90E0</color>
+    <color name="mode_test_on">#211A3D</color>
+    <color name="mode_test_container">#362A66</color>
+    <color name="mode_test_on_container">#E3DEF7</color>
+
+    <!-- Feedback states -->
+    <color name="state_error">#E8837E</color>
+    <color name="state_error_on">#430E0C</color>
+    <color name="state_error_container">#5C1917</color>
+    <color name="state_error_on_container">#F6D6D3</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A "raised" braille dot: solid fill in the Learning-mode color, with a
+     darker stroke for depth so it reads as physically raised, not just
+     colored-in. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/mode_learning" />
+    <stroke
+        android:width="1.5dp"
+        android:color="@color/mode_learning_on_container" />
+</shape>

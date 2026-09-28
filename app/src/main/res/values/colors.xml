@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Braive palette — light.
+
+        Design intent: this is a low-vision-adjacent accessibility product,
+        so neutrals stay near true white/black for maximum contrast rather
+        than a soft cream/off-black (a comfortable choice for most apps, but
+        one that trades away contrast this app's users specifically need).
+
+        Each of the three modes gets one consistent hue, used identically
+        on buttons, status text, and progress across that mode, so a child
+        recognizes "which mode am I in" by color, not just by reading text:
+          Learning  -> amber   (curious / exploratory)
+          Practice  -> teal    (active / in-progress)
+          Test      -> indigo  (focused / higher-stakes)
+        On-colors below are chosen and contrast-checked against WCAG AA
+        (4.5:1 for normal text) - see the pairing comments.
+    -->
+
+    <!-- Neutrals -->
+    <color name="brand_background">#FFFFFF</color>
+    <color name="brand_surface">#FFFFFF</color>
+    <color name="brand_surface_variant">#F2EEF7</color>
+    <color name="brand_ink">#201C26</color>            <!-- primary text -->
+    <color name="brand_ink_soft">#5C5567</color>        <!-- secondary text -->
+    <color name="brand_outline">#A79FB3</color>
+    <color name="brand_outline_variant">#DAD4E0</color>
+
+    <!-- Learning mode - amber (paired with dark ink text, 6.3:1 contrast) -->
+    <color name="mode_learning">#E8862E</color>
+    <color name="mode_learning_on">#201C26</color>
+    <color name="mode_learning_container">#FBE0BE</color>
+    <color name="mode_learning_on_container">#7A3E05</color>
+
+    <!-- Practice mode - teal (paired with white text, 4.9:1 contrast) -->
+    <color name="mode_practice">#12805F</color>
+    <color name="mode_practice_on">#FFFFFF</color>
+    <color name="mode_practice_container">#CBEEE3</color>
+    <color name="mode_practice_on_container">#0B4A3B</color>
+
+    <!-- Test mode - indigo (paired with white text, 6.8:1 contrast) -->
+    <color name="mode_test">#5B4EA8</color>
+    <color name="mode_test_on">#FFFFFF</color>
+    <color name="mode_test_container">#E3DEF7</color>
+    <color name="mode_test_on_container">#362A66</color>
+
+    <!-- Feedback states -->
+    <color name="state_error">#C23B3B</color>
+    <color name="state_error_on">#FFFFFF</color>
+    <color name="state_error_container">#F6D6D3</color>
+    <color name="state_error_on_container">#6B1616</color>
+
+    <!-- Legacy names kept in case anything references them directly -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

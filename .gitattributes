@@ -1,0 +1,14 @@
+# Normalise line endings so Windows/Mac/Linux teammates don't fight over them
+* text=auto
+
+# Scripts must keep the right endings to run
+gradlew      text eol=lf
+*.sh         text eol=lf
+gradlew.bat  text eol=crlf
+
+# Binary files – never touch
+*.png  binary
+*.jpg  binary
+*.jar  binary
+*.ttf  binary
+*.wav  binary

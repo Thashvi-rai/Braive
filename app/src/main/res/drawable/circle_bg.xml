@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Big current-letter display in Learning mode — recolored from the old
+     generic blue to the Learning-mode amber so it's consistent with the
+     rest of that screen's color-coding. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/mode_learning_container" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/mode_learning" />
+</shape>

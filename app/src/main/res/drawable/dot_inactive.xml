@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A "not raised" braille dot. Previously this state was shown only via
+     alpha=0.2 on the same filled dot_active drawable, which relies on
+     opacity alone to convey information — a problem for low-vision users
+     (the same reason color alone shouldn't carry information). This is a
+     genuinely different shape: outline only, no fill, so raised vs. not
+     raised is visible by silhouette even at low contrast sensitivity. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/brand_surface_variant" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/brand_outline" />
+</shape>

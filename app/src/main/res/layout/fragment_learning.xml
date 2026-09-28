@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="Learning Mode"
+            android:textAppearance="@style/TextAppearance.App.Title"
+            android:textColor="?attr/colorPrimary"
+            app:drawableStartCompat="@drawable/badge_learning" />
+
+        <!-- Current letter display, Learning-mode colored -->
+        <TextView
+            android:id="@+id/tvCurrentLetter"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circle_bg"
+            android:gravity="center"
+            android:text="?"
+            android:textAppearance="@style/TextAppearance.App.BigLetter"
+            android:textColor="?attr/colorPrimary" />
+
+        <!-- Braille dot layout: 2 columns x 3 rows. Starts fully "not raised". -->
+        <GridLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <View android:id="@+id/dot0" android:layout_width="44dp" android:layout_height="44dp"
+                android:background="@drawable/dot_inactive" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot3" android:layout_width="44dp" android:layout_height="44dp"
+                android:background="@drawable/dot_inactive" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot1" android:layout_width="44dp" android:layout_height="44dp"
+                android:background="@drawable/dot_inactive" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot4" android:layout_width="44dp" android:layout_height="44dp"
+                android:background="@drawable/dot_inactive" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot2" android:layout_width="44dp" android:layout_height="44dp"
+                android:background="@drawable/dot_inactive" android:layout_margin="6dp"/>
+            <View android:id="@+id/dot5" android:layout_width="44dp" android:layout_height="44dp"
+                android:background="@drawable/dot_inactive" android:layout_margin="6dp"/>
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Select a letter to begin"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="14sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnListen"
+            style="@style/Widget.App.Button.Learning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Say a Letter 🎤"/>
+
+        <!-- A-Z letter grid (populated in code with LetterTile-styled buttons) -->
+        <GridLayout
+            android:id="@+id/gridLetters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="6"
+            android:useDefaultMargins="false"/>
+
+    </LinearLayout>
+</ScrollView>

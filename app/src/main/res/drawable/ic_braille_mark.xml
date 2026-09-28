@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reusable brand mark: the full 2x3 braille dot cell. Previously this
+     shape only ever appeared inside Learning mode's letter display; now
+     it's the app's signature element (also see ic_launcher_foreground,
+     badge_learning/practice/test). Tintable via ImageView's tint attr. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path android:fillColor="#FF201C26" android:pathData="M6.1,4 a2.4,2.4 0 1,0 4.8,0 a2.4,2.4 0 1,0 -4.8,0"/>
+    <path android:fillColor="#FF201C26" android:pathData="M6.1,10 a2.4,2.4 0 1,0 4.8,0 a2.4,2.4 0 1,0 -4.8,0"/>
+    <path android:fillColor="#FF201C26" android:pathData="M6.1,16 a2.4,2.4 0 1,0 4.8,0 a2.4,2.4 0 1,0 -4.8,0"/>
+    <path android:fillColor="#FF201C26" android:pathData="M13.1,4 a2.4,2.4 0 1,0 4.8,0 a2.4,2.4 0 1,0 -4.8,0"/>
+    <path android:fillColor="#FF201C26" android:pathData="M13.1,10 a2.4,2.4 0 1,0 4.8,0 a2.4,2.4 0 1,0 -4.8,0"/>
+    <path android:fillColor="#FF201C26" android:pathData="M13.1,16 a2.4,2.4 0 1,0 4.8,0 a2.4,2.4 0 1,0 -4.8,0"/>
+</vector>

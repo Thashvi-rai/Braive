@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Braive</string>
+    <string name="glove_not_connected">Glove Not Connected</string>
+    <string name="connect_glove">Connect Glove</string>
+    <string name="learning_mode">Learning Mode</string>
+    <string name="practice_mode">Practice Mode</string>
+    <string name="test_mode">Test Mode</string>
+    <string name="battery_low_warning">⚠ Battery low — ask a grown-up to replace it</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Braive theme.
+
+        Material3 color roles are mapped onto the three-mode system:
+        primary = Learning, secondary = Practice, tertiary = Test. This
+        gives each mode a first-class, idiomatic Material color slot
+        instead of ad-hoc hardcoded colors sprinkled through layouts.
+    -->
+    <style name="Base.Theme.BrailleGlove" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Typography: Atkinson Hyperlegible everywhere by default -->
+        <item name="android:fontFamily">@font/atkinson_hyperlegible</item>
+        <item name="fontFamily">@font/atkinson_hyperlegible</item>
+
+        <!-- Learning mode -->
+        <item name="colorPrimary">@color/mode_learning</item>
+        <item name="colorOnPrimary">@color/mode_learning_on</item>
+        <item name="colorPrimaryContainer">@color/mode_learning_container</item>
+        <item name="colorOnPrimaryContainer">@color/mode_learning_on_container</item>
+
+        <!-- Practice mode -->
+        <item name="colorSecondary">@color/mode_practice</item>
+        <item name="colorOnSecondary">@color/mode_practice_on</item>
+        <item name="colorSecondaryContainer">@color/mode_practice_container</item>
+        <item name="colorOnSecondaryContainer">@color/mode_practice_on_container</item>
+
+        <!-- Test mode -->
+        <item name="colorTertiary">@color/mode_test</item>
+        <item name="colorOnTertiary">@color/mode_test_on</item>
+        <item name="colorTertiaryContainer">@color/mode_test_container</item>
+        <item name="colorOnTertiaryContainer">@color/mode_test_on_container</item>
+
+        <!-- Feedback -->
+        <item name="colorError">@color/state_error</item>
+        <item name="colorOnError">@color/state_error_on</item>
+        <item name="colorErrorContainer">@color/state_error_container</item>
+        <item name="colorOnErrorContainer">@color/state_error_on_container</item>
+
+        <!-- Neutrals -->
+        <item name="android:colorBackground">@color/brand_background</item>
+        <item name="colorOnBackground">@color/brand_ink</item>
+        <item name="colorSurface">@color/brand_surface</item>
+        <item name="colorOnSurface">@color/brand_ink</item>
+        <item name="colorSurfaceVariant">@color/brand_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/brand_ink_soft</item>
+        <item name="colorOutline">@color/brand_outline</item>
+        <item name="colorOutlineVariant">@color/brand_outline_variant</item>
+
+        <!-- Status bar follows the surface, not a jarring default color -->
+        <item name="android:statusBarColor">@color/brand_background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="Theme.BrailleGlove" parent="Base.Theme.BrailleGlove" />
+
+    <!-- ═══════════════════════════════════════════════════════════
+         Mode-colored button styles. Each mode's screens use its own
+         button style so the color-coding is consistent everywhere,
+         not just on the Home screen's mode picker.
+         ═══════════════════════════════════════════════════════════ -->
+
+    <style name="Widget.App.Button.Learning" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/mode_learning</item>
+        <item name="android:textColor">@color/mode_learning_on</item>
+        <item name="iconTint">@color/mode_learning_on</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <style name="Widget.App.Button.Practice" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/mode_practice</item>
+        <item name="android:textColor">@color/mode_practice_on</item>
+        <item name="iconTint">@color/mode_practice_on</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <style name="Widget.App.Button.Test" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/mode_test</item>
+        <item name="android:textColor">@color/mode_test_on</item>
+        <item name="iconTint">@color/mode_test_on</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <style name="Widget.App.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <!-- Large letter-grid tap targets (A-Z in Learning mode) -->
+    <style name="Widget.App.Button.LetterTile" parent="Widget.Material3.Button.TonalButton">
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="TextAppearance.App.Title" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:fontFamily">@font/atkinson_hyperlegible</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.App.BigLetter" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="android:fontFamily">@font/atkinson_hyperlegible</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ShapeAppearance.App.Card" parent="ShapeAppearance.Material3.Corner.Large">
+        <item name="cornerSize">20dp</item>
+    </style>
+
+</resources>

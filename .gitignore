@@ -1,0 +1,29 @@
+# ── Gradle / Android build output ──────────────────────────────
+.gradle/
+build/
+*/build/
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ── Machine-specific config (contains YOUR local SDK path) ─────
+local.properties
+
+# ── Android Studio / IntelliJ (each dev has their own) ─────────
+.idea/
+*.iml
+
+# ── Built binaries & signing material — never commit these ─────
+*.apk
+*.aab
+*.ap_
+*.dex
+*.jks
+*.keystore
+keystore.properties
+google-services.json
+
+# ── OS junk ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
