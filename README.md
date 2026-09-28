@@ -73,7 +73,10 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 
 ## Team
 <!-- Add names / roles here -->
-- 
+-Thashvi Rai K
+-Thanmayi Rai A
+-Swathi
+-Vibha H D
 
 ## Licence
 <!-- Choose a licence (e.g. MIT) and add a LICENSE file. Until then, all rights are reserved by the authors. -->
